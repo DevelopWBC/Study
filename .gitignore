@@ -32,7 +32,20 @@ buildNumber.properties
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 
-/bin
+/spring-data-jpa/.settings
+/spring-data-jpa/.classpath
+/spring-data-jpa/.project
+/spring-data-jpa/bin
+
+/spring-data-jpa-association/.settings
+/spring-data-jpa-association/.classpath
+/spring-data-jpa-association/.project
+/spring-data-jpa-association/bin
+
+/spring-data-redis/.settings
+/spring-data-redis/.classpath
+/spring-data-redis/.project
+/spring-data-redis/bin
 /.settings
 .classpath
 .project
