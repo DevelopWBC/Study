@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>添加用户</title>
+</head>
+<body>
+	<form th:action="@{/user/adduser}" method="post">
+		用户名称：<input type="text" name="username"> <br/>
+		用户密码：<input type="password" name="password"> <br/>
+		用户性别：<input type="text" name="sex"> <br/>
+		用户地址：<input type="text" name="address"> <br/>
+		<input type="submit" value="提交">
+	</form>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>修改用户信息</title>
+</head>
+<body>
+	<form id="dp" th:action="@{/user/updateuserinfo}" method="post">
+		<input type="hidden" name="id" th:value="${user.id}">
+		用户名称：<input type="text" name="username" th:value="${user.username}"> <br/>
+		用户密码：<input type="text" name="password" th:value="${user.password}"> <br/>
+		用户性别：<input type="text" name="sex" th:value="${user.sex}"> <br/>
+		用户地址：<input type="text" name="address" th:value="${user.address}"> <br/>
+		<input type="submit" value="确认修改">
+	</form>
+</body>
+<script type="text/javascript">
+	function createXMLHttpRequest(){
+		try{
+			
+		}
+	}
+
+window.onload = function(){
+	var f = document.getElementById("dp");
+	
+}
+</script>
+</html>
