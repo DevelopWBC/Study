@@ -1,0 +1,29 @@
+plugins {
+    id 'org.springframework.boot' version '2.1.4.RELEASE'
+    id 'java'
+}
+
+apply plugin: 'io.spring.dependency-management'
+apply plugin: 'java'
+
+group = 'cn.wzw.ex'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+    //ali仓库
+    maven {url 'http://maven.aliyun.com/nexus/content/groups/public/'}
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework:spring-context-support'
+    compile group: 'nz.net.osnz.common', name: 'common-druid', version: '4.3'
+    compile group: 'org.quartz-scheduler', name: 'quartz', version: '2.3.0'
+    runtimeOnly 'org.springframework.boot:spring-boot-devtools'
+    runtimeOnly group: 'mysql', name: 'mysql-connector-java',version: '5.1.6'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
