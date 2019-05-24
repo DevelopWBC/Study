@@ -1,0 +1,85 @@
+1.常用注解介绍
+    spring4.0之后支持使用注解来代替配置文件（xml文件），使用注解的效果和之前编写配置文件一样。
+    1.1常用注解
+    (1)@Configuration 使用在类上，申明这个类为配置类。其作用相当于之前的xml配置文件。
+    (2)@bean 使用在方法上，创建一个对象并装配到IOC容器中。相当于在xml文件的bean标签。方法名称默认为bean对象的id值，可以在注解属性value中指定名称。
+    (3)@Scope 一般与@bean注解用，声明此bean对象是否是单例。
+    (4)@Lazy 开启懒加载模式，单例模式默认是容器启动时就创建对象，开启此注解后为获取或者使用对象时才创建。
+    (5)@ComponentScan 一般写在配置类上，用来说明自动扫描装配的包路径。与xml配置文件中的扫描包注解功能相同。
+                属性：
+                 value:指定要扫描的包
+                 excludeFilters = Filter[] ：指定扫描的时候按照什么规则排除那些组件
+                 includeFilters = Filter[] ：指定扫描的时候只需要包含哪些组件
+                 FilterType.ANNOTATION：按照注解
+                 FilterType.ASSIGNABLE_TYPE：按照给定的类型；
+                 FilterType.ASPECTJ：使用ASPECTJ表达式
+                 FilterType.REGEX：使用正则指定
+                 FilterType.CUSTOM：使用自定义规则
+                 useDefaultFilters = false 关闭默认的过滤规则
+    (6)@Conditional 生成bean对象时的过滤规则，满足条件时才会创建bean对象放入容器中。需要自定义类实现Condition接口
+    (7)@Import 根据类的全路径名称导入bean对象到容器中
+    (8)@Controller/@Service/@Repository/@Component 作用结果都是相同的，注册组件但未添加到容器中被扫描后才会添加到容器。名称不同用于区别使用场景，@Component用来标识没有明确使用场景的组件注册。
+
+2.spring中注册组件的常用注解方式
+    	 1）包扫描+组件标注注解（@Controller/@Service/@Repository/@Component）[自己写的类] ***组件标注注解是为了让包扫描注解发现后，装配到容器中。只写标注是不会被加载到容器中。
+    	 2）@Bean[导入的第三方包里面的组件] ***方法级别上使用bean注解，在容器启动时会被发现并装配到容器中。
+    	 3）@Import[快速给容器中导入一个组件]    *** @Import注解的三种实现方式，都是会在容器启动时被发现且加载到容器中。
+    	 	1）@Import(要导入到容器中的组件)；容器中就会自动注册这个组件，id默认是全类名
+    	  	2）ImportSelector:返回需要导入的组件的全类名数组；
+    	  	3）ImportBeanDefinitionRegistrar:手动注册bean到容器中
+    	    4）使用Spring提供的 FactoryBean（工厂Bean）; bean对象实现FactoryBean接口 ***容器启动时会发发现并装配到容器中。
+    	  	   1）默认获取到的是工厂bean调用getObject创建的对象
+    	  	   2）要获取工厂Bean本身，我们需要给id前面加一个&
+    		    &colorFactoryBean
+
+3.bean的生命周期
+     *bean创建(这里是指通过构造器赋值后创建了bean对象)---初始化(spring对bean生命周期中的一部分)----销毁的过程(spring对bean生命周期的管理)
+     * 容器管理bean的生命周期；
+     * 我们可以自定义初始化和销毁方法；容器在bean进行到当前生命周期的时候来调用我们自定义的初始化和销毁方法
+     *
+     * 构造（对象创建）
+     * 		单实例：在容器启动的时候创建对象
+     * 		多实例：在每次获取的时候创建对象\
+     *
+     * BeanPostProcessor.postProcessBeforeInitialization
+     * 初始化：
+     * 		对象创建完成，并赋值好，调用初始化方法。。。
+     * BeanPostProcessor.postProcessAfterInitialization
+     * 销毁：
+     * 		单实例：容器关闭的时候
+     * 		多实例：容器不会管理这个bean；容器不会调用销毁方法；
+     *
+     *
+     * 遍历得到容器中所有的BeanPostProcessor；挨个执行beforeInitialization，
+     * 一但返回null，跳出for循环，不会执行后面的BeanPostProcessor.postProcessorsBeforeInitialization
+     *
+     * BeanPostProcessor原理
+     * populateBean(beanName, mbd, instanceWrapper);给bean进行属性赋值
+     * initializeBean
+     * {
+     * applyBeanPostProcessorsBeforeInitialization(wrappedBean, beanName);
+     * invokeInitMethods(beanName, wrappedBean, mbd);执行自定义初始化
+     * applyBeanPostProcessorsAfterInitialization(wrappedBean, beanName);
+     *}
+     *
+     *
+     *
+     * 1）、指定初始化和销毁方法；
+     * 		通过@Bean指定init-method和destroy-method；
+     * 2）、通过让Bean实现InitializingBean（定义初始化逻辑），
+     * 				DisposableBean（定义销毁逻辑）;
+     * 3）、可以使用JSR250；
+     * 		@PostConstruct：在bean创建完成并且属性赋值完成；来执行初始化方法
+     * 		@PreDestroy：在容器销毁bean之前通知我们进行清理工作
+     * 4）、BeanPostProcessor【interface】：bean的后置处理器；
+     * 		在bean初始化前后进行一些处理工作；
+     * 		postProcessBeforeInitialization:在初始化之前工作
+     * 		postProcessAfterInitialization:在初始化之后工作
+     *
+     * Spring底层对 BeanPostProcessor 的使用；
+     * 		bean赋值，注入其他组件，@Autowired，生命周期注解功能，@Async,xxx BeanPostProcessor;
+
+4.注解加载配置文件以及获取配置文件中的属性值
+    1）、使用@PropertySource("classpath:/类路径") 加载properties配置文件，它可以使用在类级别
+    2）、使用@value 取出配置文件中定义的属性值，也可以写默认值,它可以使用在属性、方法、参数和注解级别
+
