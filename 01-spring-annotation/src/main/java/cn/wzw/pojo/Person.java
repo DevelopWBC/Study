@@ -1,5 +1,7 @@
 package cn.wzw.pojo;
 
+import javax.persistence.*;
+
 /**
  * @Author Wangzhiwen
  * @ClassName Person
@@ -7,8 +9,16 @@ package cn.wzw.pojo;
  * @Date 2019/5/23 11:01
  * @Version 1.0
  */
+@Entity
+@Table(name = "t_person")
 public class Person {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
+    private Integer id;
+    @Column(name = "name")
     private String name;
+    @Column(name = "age")
     private int age;
 
     public Person() {
@@ -35,10 +45,19 @@ public class Person {
         this.age = age;
     }
 
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
     @Override
     public String toString() {
         return "Person{" +
-                "name='" + name + '\'' +
+                "id=" + id +
+                ", name='" + name + '\'' +
                 ", age=" + age +
                 '}';
     }

@@ -1,6 +1,7 @@
 package cn.wzw.dao;
 
-import org.springframework.stereotype.Repository;
+import cn.wzw.pojo.Person;
+import org.springframework.data.jpa.repository.JpaRepository;
 
 /**
  * @Author Wangzhiwen
@@ -9,6 +10,5 @@ import org.springframework.stereotype.Repository;
  * @Date 2019/5/23 11:02
  * @Version 1.0
  */
-@Repository
-public class PersonDao {
+public interface PersonDao extends JpaRepository<Person,Integer> {
 }
