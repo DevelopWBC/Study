@@ -1,0 +1,24 @@
+1.版本
+    servlet3.0及以上支持注解的方式，不在配置web.xml文件。
+    @WebServlet：注解方式配置servlet
+    @WebFilter：注解方式配置filter
+    @WebListener：注解方式配置Listener
+
+2.共享库
+    Shared libraries（共享库） / runtimes pluggability（运行时插件能力）
+
+    1）、Servlet容器启动会扫描，当前应用里面每一个jar包的ServletContainerInitializer的实现
+    2）、提供ServletContainerInitializer的实现类；
+    	必须绑定在，META-INF/services/javax.servlet.ServletContainerInitializer
+    	文件的内容就是ServletContainerInitializer实现类的全类名；
+    总结：容器在启动应用的时候，会扫描当前应用每一个jar包里面
+    META-INF/services/javax.servlet.ServletContainerInitializer
+    指定的实现类，启动并运行这个实现类的方法；传入感兴趣的类型；
+    运行时，动态加载
+    自定义：实现接口，开启@HandlesTypes注解。运行时在servletContext中加入组件（servlet、filter、listenter）
+    ServletContainerInitializer；
+    @HandlesTypes；
+
+3.异步请求处理
+    tomcat会有一个线程池来处理请求，每一个请求从开始处理直到请求处理完成后才会被释放。异步请求时，主线程会立马释放掉剩下的交给异步线程处理。
+    @WebServlet(asyncSupported = true)
