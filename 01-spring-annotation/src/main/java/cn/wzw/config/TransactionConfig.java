@@ -24,11 +24,11 @@ import javax.sql.DataSource;
  * @Date 2019/5/27 14:43
  * @Version 1.0
  */
+@EnableTransactionManagement //开启事务注解
 @EnableJpaRepositories(value = "cn.wzw.dao") //jpa扫描数据层
 @ComponentScan({"cn.wzw.service"})
 @PropertySource("classpath:/db.properties")
 @Configuration
-@EnableTransactionManagement //开启事务注解
 public class TransactionConfig {
 
     @Value("${jdbc.url}")
@@ -67,7 +67,7 @@ public class TransactionConfig {
 
     //3.配置事务管理器
     @Bean
-    public PlatformTransactionManager transactionManager(EntityManagerFactory entityManagerFactory) throws Exception{
+    public PlatformTransactionManager transactionManager(EntityManagerFactory entityManagerFactory){
         JpaTransactionManager jpaTransactionManager = new JpaTransactionManager();
         jpaTransactionManager.setEntityManagerFactory(entityManagerFactory);
         return jpaTransactionManager;

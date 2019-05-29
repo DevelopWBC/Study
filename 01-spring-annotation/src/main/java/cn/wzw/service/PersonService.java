@@ -22,5 +22,6 @@ public class PersonService {
     public void insertPerson(Person person){
         personDao.save(person);
         System.out.println("新增成功.....");
+        int i = 10/0;
     }
 }

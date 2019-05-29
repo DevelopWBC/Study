@@ -23,5 +23,6 @@ public class TransactionTest {
         person.setAge(22);
         bean.insertPerson(person);
         System.out.println("测试。。。。。。。。。。。。");
+        context.close();
     }
 }

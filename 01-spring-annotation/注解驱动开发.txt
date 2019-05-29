@@ -307,6 +307,9 @@
        * 5、配置事务管理器来控制事务;
        * 		@Bean
        * 		public PlatformTransactionManager transactionManager()
+        mysql中只有INNODB，类型才支持事务。查看表事务类型及修改：show ENGINES;
+                                                        show VARIABLES LIKE '%storage_engine%';
+                                                        ALTER TABLE t_person ENGINE=INNODB;
        *
        *
        * 原理：
