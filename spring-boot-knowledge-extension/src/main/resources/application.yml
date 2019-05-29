@@ -1,0 +1,28 @@
+#yml树型结构的配置文件
+#配置一个实体类的属性
+Person:
+  name: wangzhiwen
+  age: 22
+  sex: men
+  email: 1015241415@qq.com
+
+#配置集合数组
+#方式一：
+  arr:
+   - one
+   - two
+#方式二：
+  arr2: [one2,two2]
+
+#配置map
+#方式一：
+  map1:
+   name: mapName
+   sex: mapSex
+#方式二：
+  map2: {name: mapName2,sex: mapSex2}
+
+#配置字符数据，单引号和双引号的区别
+
+
+
