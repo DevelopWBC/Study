@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <settings>
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+    </settings>
+    <!-- 配置插件 -->
+<!--    <plugins>
+        &lt;!&ndash; mybatis分页插件 &ndash;&gt;
+        <plugin interceptor="com.github.pagehelper.PageHelper">
+            &lt;!&ndash;配置数据库方言、&ndash;&gt;
+            <property name="dialect" value="mysql"/>
+        </plugin>
+    </plugins>-->
+    <typeAliases>
+        <package name="cn.wzw.springBootKnowledgEextension.pojo"/>
+    </typeAliases>
+</configuration>
