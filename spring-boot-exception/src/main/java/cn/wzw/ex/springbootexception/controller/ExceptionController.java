@@ -1,5 +1,7 @@
 package cn.wzw.ex.springbootexception.controller;
 
+import cn.wzw.ex.springbootexception.exception.ParamsException;
+import cn.wzw.ex.springbootexception.pojo.BaseResponseCode;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -23,10 +25,14 @@ public class ExceptionController {
     */
     @RequestMapping(value = "/exception1")
     public String first(){
-        int a = 100/0;
+        //int a = 100/0;
         String s = null;
-        s.length();//空指针异常
-        return null;
+        try {
+            s.length();//空指针异常
+            return null;
+        }catch (NullPointerException e){
+            throw new ParamsException(BaseResponseCode.PARAMS_ERROR);
+        }
     }
 
     /**
@@ -38,10 +44,10 @@ public class ExceptionController {
       *@param
       *@return
      */
-    @ExceptionHandler(value = {java.lang.ArithmeticException.class})
+/*    @ExceptionHandler(value = {java.lang.ArithmeticException.class})
     public void second(){
         System.out.println("使用@ExceptionHandler处理异常......热部署。。。再次部署");
-    }
+    }*/
 
 
 }
