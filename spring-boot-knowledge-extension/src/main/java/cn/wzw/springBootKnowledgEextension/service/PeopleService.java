@@ -2,7 +2,6 @@ package cn.wzw.springBootKnowledgEextension.service;
 
 import cn.wzw.springBootKnowledgEextension.dao.PeopleMapper;
 import cn.wzw.springBootKnowledgEextension.dao.UserMapper;
-import cn.wzw.springBootKnowledgEextension.pojo.People;
 import cn.wzw.springBootKnowledgEextension.pojo.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

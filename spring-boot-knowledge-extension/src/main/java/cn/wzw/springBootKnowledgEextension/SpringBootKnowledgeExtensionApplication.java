@@ -13,7 +13,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 */
 
 @SpringBootApplication
-@MapperScan(basePackages = "cn.wzw.springBootKnowledgEextension.dao") //配置扫描的方式，接口中就不用写@Mapper注解
+@MapperScan(basePackages = "cn.wzw.springBootKnowledgEextension.dao")
 public class SpringBootKnowledgeExtensionApplication {
     public static void main(String[] args) {
         SpringApplication.run(SpringBootKnowledgeExtensionApplication.class, args);

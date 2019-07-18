@@ -6,15 +6,13 @@
     <settings>
         <setting name="mapUnderscoreToCamelCase" value="true"/>
     </settings>
-    <!-- 配置插件 -->
-<!--    <plugins>
-        &lt;!&ndash; mybatis分页插件 &ndash;&gt;
-        <plugin interceptor="com.github.pagehelper.PageHelper">
-            &lt;!&ndash;配置数据库方言、&ndash;&gt;
-            <property name="dialect" value="mysql"/>
-        </plugin>
-    </plugins>-->
     <typeAliases>
         <package name="cn.wzw.springBootKnowledgEextension.pojo"/>
     </typeAliases>
+    <!-- 配置插件 -->
+    <plugins>
+        <plugin interceptor="com.github.pagehelper.PageHelper">
+            <property name="dialect" value="mysql"/>
+        </plugin>
+    </plugins>
 </configuration>
