@@ -10,27 +10,27 @@ import java.util.List;
  * @Version 1.0
  */
 public class PageEntity<T> {
-    /*当前页*/
-    private int page;
+    /*要打印的总页数*/
+    private int totalPages;
     /*总记录数*/
-    private int total;
+    private int recordCount;
     /*分页数据*/
     private List<T> Data;
 
-    public int getPage() {
-        return page;
+    public int getTotalPages() {
+        return totalPages;
     }
 
-    public void setPage(int page) {
-        this.page = page;
+    public void setTotalPages(int totalPages) {
+        this.totalPages = totalPages;
     }
 
-    public int getTotal() {
-        return total;
+    public int getRecordCount() {
+        return recordCount;
     }
 
-    public void setTotal(int total) {
-        this.total = total;
+    public void setRecordCount(int recordCount) {
+        this.recordCount = recordCount;
     }
 
     public List<T> getData() {

@@ -19,12 +19,6 @@ import org.springframework.web.client.RestClientException;
 @RestControllerAdvice
 public class GlobalExceptionHandle {
     private static Logger logger = LoggerFactory.getLogger(GlobalExceptionHandle.class);
-    /*捕获未知异常*/
-/*    @ExceptionHandler(value = Exception.class)
-    public BaseResopnse exceptionHandler(Exception e){
-        logger.error(e.getMessage(),e);
-        return BaseResponseUtil.error(BaseResponseCode.ERROR);
-    }*/
 
     /*捕获业务异常*/
     @ExceptionHandler(value = BaseException.class)
@@ -37,6 +31,13 @@ public class GlobalExceptionHandle {
     @ExceptionHandler(value = RestClientException.class)
     public BaseResopnse restClientExceptionHandler(RestClientException e){
         logger.error("网络连接异常",e);
+        return BaseResponseUtil.error(BaseResponseCode.ERROR);
+    }
+
+    /*捕获未知异常*/
+    @ExceptionHandler(value = Exception.class)
+    public BaseResopnse exceptionHandler(Exception e){
+        logger.error(e.getMessage(),e);
         return BaseResponseUtil.error(BaseResponseCode.ERROR);
     }
 }

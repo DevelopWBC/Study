@@ -1,10 +1,12 @@
 package cn.wzw.ex.springbootexception.controller;
 
 import cn.wzw.ex.springbootexception.exception.ParamsException;
-import cn.wzw.ex.springbootexception.pojo.BaseResponseCode;
+import cn.wzw.ex.springbootexception.pojo.*;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.ExceptionHandler;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @Author Wangzhiwen
@@ -34,6 +36,32 @@ public class ExceptionController {
             throw new ParamsException(BaseResponseCode.PARAMS_ERROR);
         }
     }
+
+    @ResponseBody
+    @RequestMapping(value = "/exception2",method = RequestMethod.GET)
+    public BaseResopnse first2(){
+        User user1 = new User(11,"22");
+        User user2 = new User(12,"23");
+        User user3 = new User(13,"24");
+        User user4 = new User(14,"25");
+        List<User> users = new ArrayList<>();
+        users.add(user1);
+        users.add(user2);
+        users.add(user3);
+        users.add(user4);
+        PageEntity<User> userPageEntity = new PageEntity<>();
+        userPageEntity.setData(users);
+        BaseResopnse success = BaseResponseUtil.success("success", userPageEntity);
+        return success;
+    }
+
+    @ResponseBody
+    @GetMapping(value = "/find")
+    public BaseResopnse first3(Integer id){
+        BaseResopnse success = BaseResponseUtil.success(id);
+        return success;
+    }
+
 
     /**
       *@author Wangzhiwen
