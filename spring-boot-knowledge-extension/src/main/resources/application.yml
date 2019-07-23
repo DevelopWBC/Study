@@ -58,4 +58,10 @@ mybatis:
   config-location: classpath:/mybatis/config/mybatisConfig.xml
   mapper-locations: classpath:/mybatis/mapper/*.xml
 
+async:
+  corePoolSize: 10
+  maxPoolSize: 15
+  queueCapacity: 8
+  keepAlive: 60
+
 

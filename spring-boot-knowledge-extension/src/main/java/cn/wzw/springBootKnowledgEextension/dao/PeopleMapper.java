@@ -1,7 +1,6 @@
 package cn.wzw.springBootKnowledgEextension.dao;
 
 import cn.wzw.springBootKnowledgEextension.pojo.User;
-import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
 
@@ -12,7 +11,7 @@ import java.util.List;
  * @Date 2019/6/3 13:16
  * @Version 1.0
  */
-@Mapper
+//@Mapper
 public interface PeopleMapper {
    void addPeople();
    void deletePeople(Integer id);

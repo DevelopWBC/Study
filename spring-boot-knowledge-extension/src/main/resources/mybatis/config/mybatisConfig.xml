@@ -11,8 +11,8 @@
     </typeAliases>
     <!-- 配置插件 -->
     <plugins>
-        <plugin interceptor="com.github.pagehelper.PageHelper">
-            <property name="dialect" value="mysql"/>
+        <plugin interceptor="com.github.pagehelper.PageInterceptor">
+            <!--<property name="dialect" value="mysql"/>-->
         </plugin>
     </plugins>
 </configuration>

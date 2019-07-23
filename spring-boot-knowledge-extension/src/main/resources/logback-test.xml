@@ -8,14 +8,22 @@ debug：当此属性设置为true时，将打印出logback内部日志信息，�
 
     <contextName>logback</contextName>
     <!-- 定义日志的根目录 -->
+    <!-- 文件相对保存路径设置可分以下三种：
+        1. value=“logs” – 表示保存到程序运行目录，在tomcat中为bin目录
+        2. value=“/logs” – 表示保存到系统目录
+        3. value=“../logs” – 表示保存到程序运行目录的父目录
+    -->
     <property name="LOG_HOME" value="app/log" />
     <!--定义参数,后面可以通过${app.name}使用-->
     <property name="app.name" value="log"/>
     <!-- 可以配置颜色方案 -->
     <!-- %d{yyyy-MM-dd HH:mm:ss.SSS} ==== [%thread] ==== %-5level %logger{50} - %msg%n -->
+    <!-- %yellow(%date{yyyy-MM-dd HH:mm:ss}) |%highlight(%-5level) |%blue(%thread) |%blue(%file:%line) |%green(%logger) |%cyan(%msg%n) -->
+    <!-- %red(%date{yyyy-MM-dd HH:mm:ss}) %highlight(%-5level) %red([%thread]) %boldMagenta(%logger{50}) %cyan(%msg%n) -->
     <property name="CONSOLE_LOG_PATTERN"
               value="%red(%date{yyyy-MM-dd HH:mm:ss}) %highlight(%-5level) %red([%thread]) %boldMagenta(%logger{50}) %cyan(%msg%n)">
     </property>
+
     <!--ConsoleAppender 用于在屏幕上输出日志-->
     <appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
         <!--定义了一个过滤器,在LEVEL之下的日志输出不会被打印出来-->
@@ -33,6 +41,37 @@ debug：当此属性设置为true时，将打印出logback内部日志信息，�
         </encoder>-->
     </appender>
 
+    <!-- ERROR级别日志-->
+    <appender name="error" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_HOME}/${app.name}/error/.log</file>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>ERROR</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_HOME}/${app.name}/error.%d{yyyy-MM-dd.HH}.log.gz
+            </fileNamePattern>
+            <!--60天的时间周期，日志量最大20GB-->
+            <maxHistory>60</maxHistory>
+            <!-- 该属性在 1.1.6版本后 才开始支持-->
+            <totalSizeCap>20GB</totalSizeCap>
+        </rollingPolicy>
+        <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+            <!--每个日志文件最大100MB-->
+            <maxFileSize>100MB</maxFileSize>
+        </triggeringPolicy>
+        <!--定义输出格式-->
+        <!-- <encoder>
+             <pattern>%d [%thread] %-5level %logger{36} [%file : %line] - %msg%n</pattern>
+         </encoder>-->
+        <!-- 日志输出格式： -->
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <pattern>${CONSOLE_LOG_PATTERN}</pattern>
+        </layout>
+    </appender>
+
+    <!-- 写入文件 -->
     <appender name="file" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <!--定义日志输出的路径-->
         <!--这里的scheduler.manager.server.home 没有在上面的配置中设定，所以会使用java启动时配置的值-->
@@ -53,21 +92,15 @@ debug：当此属性设置为true时，将打印出logback内部日志信息，�
             <maxFileSize>100MB</maxFileSize>
         </triggeringPolicy>
         <!--定义输出格式-->
-       <!-- <encoder>
-            <pattern>%d [%thread] %-5level %logger{36} [%file : %line] - %msg%n</pattern>
-        </encoder>-->
+        <!-- <encoder>
+             <pattern>%d [%thread] %-5level %logger{36} [%file : %line] - %msg%n</pattern>
+         </encoder>-->
         <!-- 日志输出格式： -->
         <layout class="ch.qos.logback.classic.PatternLayout">
             <pattern>${CONSOLE_LOG_PATTERN}</pattern>
         </layout>
     </appender>
 
-    <!--root是默认的logger 这里设定输出级别是debug-->
-    <root level="trace">
-        <!--定义了两个appender，日志会通过往这两个appender里面写-->
-        <appender-ref ref="stdout"/>
-        <appender-ref ref="file"/>
-    </root>
 
     <!--对于类路径以 com.example.logback 开头的Logger,输出级别设置为warn,并且只输出到控制台-->
     <!--这个logger没有指定appender，它会继承root节点中定义的那些appender-->
@@ -85,7 +118,16 @@ debug：当此属性设置为true时，将打印出logback内部日志信息，�
         <appender-ref ref="stdout"/>
     </logger>
 
+
     <!--由于设置了 additivity="false" ，所以输出时不会使用rootLogger的appender-->
     <!--但是这个logger本身又没有配置appender，所以使用这个logger输出日志的话就不会输出到任何地方-->
     <logger name="mytest2" level="info" additivity="false"/>
+
+    <!--root是默认的logger 这里设定输出级别是debug-->
+    <root level="debug">
+        <!--定义了两个appender，日志会通过往这两个appender里面写-->
+        <appender-ref ref="stdout"/>
+        <appender-ref ref="error"/>
+        <appender-ref ref="file"/>
+    </root>
 </configuration>
