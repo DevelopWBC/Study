@@ -1,5 +1,6 @@
 package cn.wzw.springBootKnowledgEextension.controller;
 
+import cn.wzw.springBootKnowledgEextension.pojo.Result;
 import cn.wzw.springBootKnowledgEextension.service.PeopleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -39,5 +40,23 @@ public class AsyncController {
             res.put("msg","error");
             return res;
         }
+    }
+
+    @GetMapping(value = "/list")
+    public Result list(){
+        int page = 0;
+        int size = 100;
+        Result result = peopleService.listUser(page, size);
+        return result;
+    }
+
+
+    @GetMapping(value = "/save")
+    public Map<String,Object> save(){
+        Map<String,Object> res = new HashMap<>();
+        peopleService.saveOneUser();
+        res.put("code",0);
+        res.put("msg","success");
+        return res;
     }
 }

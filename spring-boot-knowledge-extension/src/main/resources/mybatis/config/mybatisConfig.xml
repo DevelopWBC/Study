@@ -10,9 +10,9 @@
         <package name="cn.wzw.springBootKnowledgEextension.pojo"/>
     </typeAliases>
     <!-- 配置插件 -->
-    <plugins>
+    <!--<plugins>
         <plugin interceptor="com.github.pagehelper.PageInterceptor">
-            <!--<property name="dialect" value="mysql"/>-->
+            &lt;!&ndash;<property name="dialect" value="mysql"/>&ndash;&gt;
         </plugin>
-    </plugins>
+    </plugins>-->
 </configuration>

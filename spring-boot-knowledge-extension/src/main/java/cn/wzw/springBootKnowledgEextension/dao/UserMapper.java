@@ -19,10 +19,10 @@ import java.util.List;
 public interface UserMapper {
     @Select("select * from t_person")
     List<User> findAll();
-    @Insert("insert into person() values() ")
+    @Insert("insert into t_person(age,name) values(#{age},#{name}) ")
     void addPerson(User person);
-    @Update("update person set username=#{person.username} where id = #{person.id}")
+    @Update("update t_person set username=#{person.username} where id = #{person.id}")
     void updatePersonUsername(User person);
-    @Delete("delete person where id = #{id}")
+    @Delete("delete t_person where id = #{id}")
     void deletePerson(Integer id);
 }
