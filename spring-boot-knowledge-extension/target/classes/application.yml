@@ -1,0 +1,67 @@
+#yml树型结构的配置文件
+#配置一个实体类的属性
+Person:
+  name: wangzhiwen
+  age: 22
+  sex: men
+  email: 1015241415@qq.com
+
+#配置集合数组
+#方式一：
+  arr:
+   - one
+   - two
+#方式二：
+  arr2: [one2,two2]
+
+#配置map
+#方式一：
+  map1:
+   name: mapName
+   sex: mapSex
+#方式二：
+  map2: {name: mapName2,sex: mapSex2}
+
+#配置字符数据，单引号和双引号的区别
+
+#配置Durid数据源，及监控信息
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 123456
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://localhost:3306/test
+
+    initialSize: 5
+    minIdle: 5
+    maxActive: 20
+    maxWait: 60000
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: SELECT 1 FROM DUAL
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: true
+    #   配置监控统计拦截的filters，去掉后监控界面sql无法统计，'wall'用于防火墙,切换日志框架时要更换这里的日志框架名称
+    filters: stat,wall,slf4j
+    maxPoolPreparedStatementPerConnectionSize: 20
+    useGlobalDataSourceStat: true
+    connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
+    #DataSourceInitializer：ApplicationListener的作用，生成表执行sql语句，在这里配置
+    #    schema:
+    #      - classpath:department.sql
+
+#mybatis有xml配置文件时需要指定配置文件位置和映射mapper.xml文件
+mybatis:
+  config-location: classpath:/mybatis/config/mybatisConfig.xml
+  mapper-locations: classpath:/mybatis/mapper/*.xml
+
+async:
+  corePoolSize: 10
+  maxPoolSize: 15
+  queueCapacity: 8
+  keepAlive: 60
+
+
