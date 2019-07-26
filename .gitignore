@@ -46,8 +46,10 @@ hs_err_pid*
 /spring-data-redis/.classpath
 /spring-data-redis/.project
 /spring-data-redis/bin
+/.idea
 
 #不忽略文件#
 /.settings
 .classpath
 .project
+.idea
