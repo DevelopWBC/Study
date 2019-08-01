@@ -1,0 +1,46 @@
+plugins {
+    id 'org.springframework.boot' version '2.1.6.RELEASE'
+    id 'java'
+}
+
+apply plugin: 'io.spring.dependency-management'
+
+group = 'spring-boot-case'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+configurations {
+    developmentOnly
+    runtimeClasspath {
+        extendsFrom developmentOnly
+    }
+}
+
+repositories {
+    maven { url 'http://maven.aliyun.com/nexus/content/groups/public/'}
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'org.springframework.boot:spring-boot-starter-quartz'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+    // 使用实现了AMQP协议的消息中间件，在本demo中使用RabbitMQ。
+    implementation 'org.springframework.boot:spring-boot-starter-amqp'
+    // 引入redis来操作缓存数据
+    implementation 'org.springframework.boot:spring-boot-starter-data-redis'
+    // 使用spring抽象的缓存，对JSR107简化并实现。使用spring管理缓存时要加入此依赖
+    implementation 'org.springframework.boot:spring-boot-starter-cache'
+    // spring默认使用yml中的配置，但有时候要用传统的xml或properties配置，就需要使用spring-boot-configuration-processor了
+    annotationProcessor "org.springframework.boot:spring-boot-configuration-processor"
+    implementation 'com.github.pagehelper:pagehelper-spring-boot-starter:1.2.10'
+    implementation 'ch.qos.logback:logback-classic:1.2.3'
+    implementation 'ch.qos.logback:logback-core:1.2.3'
+    compile group: 'com.alibaba', name: 'fastjson', version:'1.2.44'
+    compile group: 'com.google.code.gson', name: 'gson', version:'2.8.4'
+    runtimeOnly group: 'mysql', name: 'mysql-connector-java',version: '5.1.34'
+    compile group: 'nz.net.osnz.common', name: 'common-druid', version: '4.3'
+    developmentOnly 'org.springframework.boot:spring-boot-devtools'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}

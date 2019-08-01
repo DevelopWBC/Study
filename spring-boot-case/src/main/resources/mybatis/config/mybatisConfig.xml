@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <settings>
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+    </settings>
+    <!-- spring-mybatis.xml里面配置了包的别名会引发logback下
+        日志org.apache.ibatis.io.DefaultVFS : Reader entry: ����   4输出乱码  -->
+    <!--<typeAliases>
+        <package name="springbootcase.demo.pojo.data.test2"/>
+    </typeAliases>-->
+    <!-- 配置插件，使用springboot启动器后不需要再配置文件里再次配置，会出错 -->
+    <!--<plugins>
+        <plugin interceptor="com.github.pagehelper.PageInterceptor">
+            &lt;!&ndash;<property name="dialect" value="mysql"/>&ndash;&gt;
+        </plugin>
+    </plugins>-->
+</configuration>

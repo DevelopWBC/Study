@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>springboot整合Thymeleaf</title>
+</head>
+<body>
+	<h1>springboot整合Thymeleaf</h1>
+	<hr/>
+	<h3>遍历集合</h3>
+	<table>
+		<tr>
+			<td>年龄</td>
+			<td>姓名</td>
+			<td>性别</td>
+		</tr>
+		<tr th:each="user : ${list}">
+			<td th:text="${user.age}"></td>
+			<td th:text="${user.name}"></td>
+			<td th:text="${user.sex}"></td>
+		</tr>
+	</table>
+	
+	<hr/>
+	<h3>将值放入输入框中,th:value="${}"</h3>
+	<input name = "luck" th:value="${#dates.format(date)}">
+	
+	<hr/>
+	<h3>字符串的多种操作语法</h3>
+	<ul>
+		<li th:text="${#strings.isEmpty(value)}">判断是否为空,th:text="${#strings.isEmpty(key)}"</li>
+		<li th:text="${#strings.contains(value,'x')}">判断字符串是否包含子串</li>
+		<li th:text="${#strings.contains(value,'x')}">判断字符串是否以某字符串开头</li>
+		<li th:text="${#strings.contains(value,'x')}">判断字符串是否以某字符串结尾</li>
+		<li th:text="${#strings.contains(value,'x')}">判断字符串是否包含子串</li>
+		<li th:text="${#strings.contains(value,'x')}">判断字符串是否包含子串</li>
+	</ul>
+</body>
+</html>
