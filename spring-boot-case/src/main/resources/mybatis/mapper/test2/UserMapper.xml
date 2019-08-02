@@ -19,6 +19,6 @@
         update user set name=#{name} where id = #{id}
     </update>
     <insert id="insertUser" parameterType="springbootcase.demo.pojo.data.test2.User" useGeneratedKeys="true" keyProperty="id">
-        insert into user(name) values (#{user.name})
+        insert into user(name) values (#{name})
     </insert>
 </mapper>

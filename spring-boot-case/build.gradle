@@ -32,6 +32,8 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-data-redis'
     // 使用spring抽象的缓存，对JSR107简化并实现。使用spring管理缓存时要加入此依赖
     implementation 'org.springframework.boot:spring-boot-starter-cache'
+    // https://mvnrepository.com/artifact/org.apache.commons/commons-pool2
+    compile group: 'org.apache.commons', name: 'commons-pool2', version: '2.6.2'
     // spring默认使用yml中的配置，但有时候要用传统的xml或properties配置，就需要使用spring-boot-configuration-processor了
     annotationProcessor "org.springframework.boot:spring-boot-configuration-processor"
     implementation 'com.github.pagehelper:pagehelper-spring-boot-starter:1.2.10'

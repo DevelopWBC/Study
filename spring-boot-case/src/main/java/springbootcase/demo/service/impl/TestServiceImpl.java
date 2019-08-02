@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 import springbootcase.demo.dao.test1.StudentRepository;
 import springbootcase.demo.dao.test2.UserMapper;
 import springbootcase.demo.dao.test3.PersonMapper;
+import springbootcase.demo.manager.RabbitMQManager;
 import springbootcase.demo.pojo.data.test1.Student;
 import springbootcase.demo.pojo.data.test2.User;
 import springbootcase.demo.pojo.data.test3.Person;
@@ -42,6 +43,7 @@ public class TestServiceImpl implements TestService {
     @Override
     public void insertUser(User user) {
         userMapper.insertUser(user);
+        RabbitMQManager.sendMsg(user);
     }
 
     @Override

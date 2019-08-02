@@ -2,6 +2,7 @@ package springbootcase.demo.manager;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.*;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Component;
 import springbootcase.demo.dao.test2.UserMapper;
 import springbootcase.demo.pojo.data.test2.User;
@@ -20,10 +21,12 @@ import java.util.List;
 public class UserCacheManager {
 
     private final UserMapper userMapper;
+    private final RedisTemplate<String,User> userRedisTemplate;
 
     @Autowired
-    public UserCacheManager(UserMapper userMapper) {
+    public UserCacheManager(UserMapper userMapper,RedisTemplate<String,User> userRedisTemplate) {
         this.userMapper = userMapper;
+        this.userRedisTemplate = userRedisTemplate;
     }
 
     /**
@@ -107,6 +110,11 @@ public class UserCacheManager {
        return userMapper.getUserById(id);
     }
 
+    public User getUserByRedis(Integer id){
+        User user = userMapper.getUserById(id);
+        userRedisTemplate.opsForValue().set(id+"-json",user);
+        return user;
+    }
 
     /**
      * @CachePut：既调用方法，又更新缓存数据；同步更新缓存

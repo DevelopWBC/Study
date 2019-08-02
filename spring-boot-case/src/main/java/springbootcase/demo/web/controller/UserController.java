@@ -1,10 +1,7 @@
 package springbootcase.demo.web.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import springbootcase.demo.manager.UserCacheManager;
 import springbootcase.demo.pojo.data.test2.User;
 import springbootcase.demo.pojo.data.test3.Person;
@@ -40,6 +37,12 @@ public class UserController {
         return service.getUser(id);
     }
 
+    @GetMapping(value = "/saveUser")
+    public ResponseResult saveUser(User user){
+        service.insertUser(user);
+        return ResponseUtil.success();
+    }
+
     @GetMapping(value = "/getPerson/{id}")
     public ResponseResult getPerson(@PathVariable(name = "id") Integer id){
         List<Person> people = service.listPersons();
@@ -68,9 +71,21 @@ public class UserController {
         return ResponseUtil.success(userById);
     }
 
+    @GetMapping("/userRedis/{id}")
+    public ResponseResult userByRedis(@PathVariable(value = "id") Integer id){
+        User userById = userCacheManager.getUserByRedis(id);
+        return ResponseUtil.success(userById);
+    }
+
     @GetMapping(value="/updateUser")
     public ResponseResult updateUser(User user){
         User updateUser = userCacheManager.updateUser(user);
         return ResponseUtil.success(updateUser);
+    }
+
+    @GetMapping(value = "/delete/{id}")
+    public ResponseResult delete(@PathVariable(value = "id") Integer id){
+        userCacheManager.deleteUserById(id);
+        return ResponseUtil.success();
     }
 }

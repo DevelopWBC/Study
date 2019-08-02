@@ -1,5 +1,7 @@
 package springbootcase.demo.pojo.data.test2;
 
+import java.io.Serializable;
+
 /**
  * @Author Wangzhiwen
  * @ClassName User
@@ -7,7 +9,7 @@ package springbootcase.demo.pojo.data.test2;
  * @Date 2019/7/29 15:58
  * @Version 1.0
  */
-public class User {
+public class User implements Serializable {
     private Integer id;
     private String name;
 

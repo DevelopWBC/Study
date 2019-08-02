@@ -14,6 +14,7 @@ import java.util.Arrays;
  * @Date 2019/8/1 10:08
  * @Version 1.0
  */
+// 对所有spring支持的缓存组件都有效
 @Configuration
 public class DefaultCacheConfig {
     /**

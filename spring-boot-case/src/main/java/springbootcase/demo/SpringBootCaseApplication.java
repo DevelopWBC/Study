@@ -1,5 +1,6 @@
 package springbootcase.demo;
 
+import org.springframework.amqp.rabbit.annotation.EnableRabbit;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
@@ -67,11 +68,25 @@ import springbootcase.demo.web.servlet.SecondServlet;
  *      4）、自定义CacheManager；
  *
  */
+
+/**
+ * 消息自动配置
+ *  1、RabbitAutoConfiguration
+ *  2、有自动配置了连接工厂ConnectionFactory；
+ *  3、RabbitProperties 封装了 RabbitMQ的配置
+ *  4、 RabbitTemplate ：给RabbitMQ发送和接受消息；
+ *  5、 AmqpAdmin ： RabbitMQ系统管理功能组件;
+ *  	AmqpAdmin：创建和删除 Queue，Exchange，Binding
+ *  6、@EnableRabbit +  @RabbitListener 监听消息队列的内容
+ *
+ */
 @SpringBootApplication
 @ServletComponentScan // 编写springboot的启动类，开启扫描。扫描@webServlet注解，并注册实例。
 @EnableScheduling  // 开启定时任务
 @EnableConfigurationProperties
 @EnableCaching // 开启缓存注解，自动加载装配缓存实现类
+@EnableRabbit // 开启基于注解的RabbitMQ模式
+//@EnableAsync
 public class SpringBootCaseApplication {
 
     public static void main(String[] args) {
