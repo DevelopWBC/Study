@@ -38,13 +38,15 @@ public class UserController {
     }
 
     @GetMapping(value = "/saveUser")
-    public ResponseResult saveUser(User user){
+    public ResponseResult saveUser(User user,Person person){
+        int i = 10/0;
         service.insertUser(user);
         return ResponseUtil.success();
     }
 
     @GetMapping(value = "/getPerson/{id}")
     public ResponseResult getPerson(@PathVariable(name = "id") Integer id){
+        int i = 10/0;
         List<Person> people = service.listPersons();
         return ResponseUtil.success(people);
     }

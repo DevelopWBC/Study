@@ -19,8 +19,8 @@ public class AOPConfig {
         return new Target();
     }
 
-    @Bean
+/*    @Bean
     public LogAspect logAspect(){
         return new LogAspect();
-    }
+    }*/
 }

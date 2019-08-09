@@ -3,6 +3,7 @@ package springbootcase.demo.service.impl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
+import springbootcase.demo.config.amqp.AMQPConfig;
 import springbootcase.demo.dao.test1.StudentRepository;
 import springbootcase.demo.dao.test2.UserMapper;
 import springbootcase.demo.dao.test3.PersonMapper;
@@ -13,6 +14,7 @@ import springbootcase.demo.pojo.data.test3.Person;
 import springbootcase.demo.service.TestService;
 
 import java.util.List;
+import java.util.Optional;
 
 /**
  * @Author Wangzhiwen
@@ -44,6 +46,7 @@ public class TestServiceImpl implements TestService {
     public void insertUser(User user) {
         userMapper.insertUser(user);
         RabbitMQManager.sendMsg(user);
+        RabbitMQManager.cartMQExchange();
     }
 
     @Override
@@ -89,7 +92,15 @@ public class TestServiceImpl implements TestService {
 
     @Override
     public void saveStudent(Student student) {
-
+        Object receive = RabbitMQManager.receive(AMQPConfig.MyQueue.USER_ADD_QUEUE);
+        if (receive != null){
+            User user = (User) receive;
+            student.setName(user.getName());
+        }else {
+            student.setName("没有收到消息");
+        }
+        student.setAge(20);
+        studentRepository.save(student);
     }
 
     @Override
@@ -103,8 +114,9 @@ public class TestServiceImpl implements TestService {
     }
 
     @Override
-    public Student getStudent() {
-        return null;
+    public Student getStudent(Integer id) {
+        Optional<Student> byId = studentRepository.findById(id);
+        return byId.orElse(null);
     }
 
     @Override

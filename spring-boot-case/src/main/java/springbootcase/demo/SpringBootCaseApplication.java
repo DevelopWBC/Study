@@ -85,7 +85,7 @@ import springbootcase.demo.web.servlet.SecondServlet;
 @EnableScheduling  // 开启定时任务
 @EnableConfigurationProperties
 @EnableCaching // 开启缓存注解，自动加载装配缓存实现类
-@EnableRabbit // 开启基于注解的RabbitMQ模式
+@EnableRabbit // 开启基于注解的RabbitMQ模式。@RabbitMQListener(被监听的队列名称)
 //@EnableAsync
 public class SpringBootCaseApplication {
 

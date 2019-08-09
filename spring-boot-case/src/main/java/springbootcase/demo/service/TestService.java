@@ -27,7 +27,7 @@ public interface TestService {
     void saveStudent(Student student);
     void removeStudent(Student student);
     void updateStudent(Student student);
-    Student getStudent();
+    Student getStudent(Integer id);
     List<Student> listStudents();
     Integer countStudent();
 

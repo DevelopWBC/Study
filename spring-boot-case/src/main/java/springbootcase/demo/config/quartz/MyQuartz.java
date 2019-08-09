@@ -4,6 +4,7 @@ import org.quartz.Job;
 import org.quartz.JobExecutionContext;
 import org.quartz.JobExecutionException;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import springbootcase.demo.service.TestService;
 
 /**
@@ -13,10 +14,15 @@ import springbootcase.demo.service.TestService;
  * @Date 2019/5/15 14:43
  * @Version 1.0
  */
+@Component
 public class MyQuartz implements Job {
 
+    private final TestService service;
+
     @Autowired
-    private TestService service;
+    public MyQuartz(TestService service) {
+        this.service = service;
+    }
 
     /**
       *@author Wangzhiwen

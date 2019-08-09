@@ -18,8 +18,13 @@ import org.springframework.stereotype.Component;
 @Component
 public class MyAdaptableJobFactory extends AdaptableJobFactory {
     //使用此对象手动注入到IOC容器中
+    private final AutowireCapableBeanFactory autowireCapableBeanFactory;
+
     @Autowired
-    private AutowireCapableBeanFactory autowireCapableBeanFactory;
+    public MyAdaptableJobFactory(AutowireCapableBeanFactory autowireCapableBeanFactory) {
+        this.autowireCapableBeanFactory = autowireCapableBeanFactory;
+    }
+
     @Override
     protected Object createJobInstance(TriggerFiredBundle bundle) throws Exception {
         Object jobInstance = super.createJobInstance(bundle);

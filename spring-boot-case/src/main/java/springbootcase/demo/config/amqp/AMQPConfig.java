@@ -35,7 +35,7 @@ public class AMQPConfig {
      */
     @Bean
     public Queue userQueue(){
-        // new Queue(String name); new Queue(String name,boolean flag)
+        // new Queue(String name); new Queue(String name,boolean durable)
         // 队列名称，是否持久化消息
         return new Queue(userAdd,true);
     }
@@ -50,6 +50,15 @@ public class AMQPConfig {
     }
 
     public static class RoutingKey{
-       // public static String
+        public static String USER_ADD = "user.add";
+        public static String USER_UPDATE = "user.update";
+        public static String PERSON_ADD = "person.add";
+        public static String STUDENT_ADD = "student.add";
+    }
+
+    public static class MyQueue{
+        public static String USER_ADD_QUEUE = "user.quque";
+        public static String PERSON_ADD_QUEUE = "person.quque";
+        public static String STUDENT_ADD_QUEUE = "student.quque";
     }
 }
