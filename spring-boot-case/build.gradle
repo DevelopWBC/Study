@@ -54,11 +54,19 @@ dependencies {
     compile group: 'com.alibaba', name: 'fastjson', version:'1.2.44'
     // 谷歌的Gson
     compile group: 'com.google.code.gson', name: 'gson', version:'2.8.4'
+    // 数据库驱动
     runtimeOnly group: 'mysql', name: 'mysql-connector-java',version: '5.1.34'
     // 阿里数据库连接池
     compile group: 'nz.net.osnz.common', name: 'common-druid', version: '4.3'
     // 热部署工具
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
+    // 工具包
+    // 对数据操作，String，arrays
+    compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.9'
+    compile group: 'commons-io', name: 'commons-io', version: '2.6'
+    compile group: 'commons-codec', name: 'commons-codec', version: '1.12'
+    compile group: 'commons-collections', name: 'commons-collections', version: '3.2.2'
+    compile group: 'commons-beanutils', name: 'commons-beanutils', version: '1.9.3'
     // springboot测试
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }

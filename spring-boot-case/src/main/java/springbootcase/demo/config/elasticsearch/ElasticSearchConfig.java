@@ -12,6 +12,6 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class ElasticSearchConfig {
     /**
-     * ES搜索配置
+     * todo:ES搜索配置
      */
 }

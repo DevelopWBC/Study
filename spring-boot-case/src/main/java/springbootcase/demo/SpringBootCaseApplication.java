@@ -10,6 +10,7 @@ import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.context.annotation.Bean;
 import org.springframework.scheduling.annotation.EnableScheduling;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import springbootcase.demo.web.filter.SecondFilter;
 import springbootcase.demo.web.servlet.SecondServlet;
 /**
@@ -86,7 +87,7 @@ import springbootcase.demo.web.servlet.SecondServlet;
 @EnableConfigurationProperties
 @EnableCaching // 开启缓存注解，自动加载装配缓存实现类
 @EnableRabbit // 开启基于注解的RabbitMQ模式。@RabbitMQListener(被监听的队列名称)
-//@EnableAsync
+@EnableWebSecurity // 开启security安全
 public class SpringBootCaseApplication {
 
     public static void main(String[] args) {
