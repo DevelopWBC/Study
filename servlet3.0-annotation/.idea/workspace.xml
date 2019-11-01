@@ -7,12 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a3e04a0-2d15-4752-a4e3-6355e42d7c33" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../01-spring-annotation/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../01-spring-annotation/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../spring-annotation/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-annotation/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-boot-knowledge-extension/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-boot-knowledge-extension/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-boot-knowledge-extension/src/main/java/cn/wzw/springBootKnowledgEextension/config/ExecutorConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-boot-knowledge-extension/src/main/java/cn/wzw/springBootKnowledgEextension/config/ExecutorConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-boot-knowledge-extension/src/main/java/cn/wzw/springBootKnowledgEextension/service/PeopleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-boot-knowledge-extension/src/main/java/cn/wzw/springBootKnowledgEextension/service/PeopleService.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,7 +37,7 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -108,6 +103,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="CatdeaLogs" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -136,7 +133,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane">
         <subPane>
           <expand>
@@ -148,7 +144,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="CatdeaLogs" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -160,7 +155,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="create.test.in.the.same.root" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../spring-boot-knowledge-extension" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Artifacts" />
@@ -343,16 +338,17 @@
       <workItem from="1563417990567" duration="167000" />
       <workItem from="1563429501404" duration="34000" />
       <workItem from="1563785888793" duration="2724000" />
+      <workItem from="1564473274258" duration="11000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9829000" />
+    <option name="totallyTimeSpent" value="9840000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25799572" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26066098" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info id="Designer" order="3" />
