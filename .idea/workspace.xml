@@ -90,22 +90,26 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="443" y="45" key="CommitChangelistDialog2" timestamp="1589341533143">
+    <state x="443" y="45" key="CommitChangelistDialog2" timestamp="1591861150981">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="443" y="45" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1589341533143" />
+    <state x="443" y="45" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1591861150981" />
     <state x="681" y="216" key="FileChooserDialogImpl" timestamp="1589341919644">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="681" y="216" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1589341919644" />
+    <state x="452" y="186" key="Vcs.Push.Dialog.v2" timestamp="1591861157330">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="452" y="186" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1591861157330" />
     <state x="694" y="415" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589341903781">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="694" y="415" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1589341903781" />
-    <state x="640" y="166" key="git4idea.branch.GitSmartOperationDialog" timestamp="1591861130452">
+    <state x="640" y="166" key="git4idea.branch.GitSmartOperationDialog" timestamp="1591861269296">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="640" y="166" key="git4idea.branch.GitSmartOperationDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1591861130452" />
+    <state x="640" y="166" key="git4idea.branch.GitSmartOperationDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1591861269296" />
   </component>
   <component name="masterDetails">
     <states>
