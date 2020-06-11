@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Gradle Imported" enabled="true">
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="C:/DevTool/Gradle/gradle-6.0/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-configuration-processor/2.1.6.RELEASE/d9a87b5296ce6113ad50035b0c55aeb3723dfe7c/spring-boot-configuration-processor-2.1.6.RELEASE.jar" />
+        </processorPath>
+        <module name="spring-boot-case.main" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

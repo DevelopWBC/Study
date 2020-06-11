@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98a9b016-9c7b-4be0-a601-f186e2843e3a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,7 +74,7 @@
       <updated>1564112205589</updated>
       <workItem from="1564112206880" duration="160000" />
       <workItem from="1589341507105" duration="1012000" />
-      <workItem from="1591861113197" duration="309000" />
+      <workItem from="1591861113197" duration="382000" />
     </task>
     <task id="LOCAL-00001" summary="0.0">
       <created>1591861152124</created>
@@ -89,7 +90,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591861304039</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="0.0">
+      <created>1591861425796</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1591861425796</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -100,26 +108,30 @@
     <option name="LAST_COMMIT_MESSAGE" value="0.0" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="443" y="45" key="CommitChangelistDialog2" timestamp="1591861303089">
+    <state x="443" y="45" key="CommitChangelistDialog2" timestamp="1591861425041">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="443" y="45" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1591861303089" />
+    <state x="443" y="45" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1591861425041" />
+    <state x="184" y="82" key="DiffContextDialog" timestamp="1591861456391">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="184" y="82" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1591861456391" />
     <state x="681" y="216" key="FileChooserDialogImpl" timestamp="1589341919644">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="681" y="216" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1589341919644" />
-    <state x="452" y="186" key="Vcs.Push.Dialog.v2" timestamp="1591861307583">
+    <state x="452" y="186" key="Vcs.Push.Dialog.v2" timestamp="1591861429369">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="452" y="186" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1591861307583" />
+    <state x="452" y="186" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1591861429369" />
     <state x="694" y="415" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589341903781">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="694" y="415" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1589341903781" />
-    <state x="640" y="166" key="git4idea.branch.GitSmartOperationDialog" timestamp="1591861410972">
+    <state x="640" y="166" key="git4idea.branch.GitSmartOperationDialog" timestamp="1591861459140">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="640" y="166" key="git4idea.branch.GitSmartOperationDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1591861410972" />
+    <state x="640" y="166" key="git4idea.branch.GitSmartOperationDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1591861459140" />
   </component>
   <component name="masterDetails">
     <states>

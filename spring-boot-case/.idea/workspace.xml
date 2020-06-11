@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9d932b05-13fe-4a45-8ca1-2b52e68a2a4f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../02-springboot-servlet/02-springboot-srvlet.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-test/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-test/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-test/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-test/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-test/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-test/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-test/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-test/src/main/java/com/wzw/test/springboottest/SpringBootTestApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-test/src/main/java/com/wzw/test/springboottest/controller/CertificateInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-test/src/main/java/com/wzw/test/springboottest/controller/OCRResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-test/src/main/java/com/wzw/test/springboottest/controller/PageA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-test/src/main/java/com/wzw/test/springboottest/controller/PageASource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-test/src/main/java/com/wzw/test/springboottest/controller/PageAText.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-test/src/main/java/com/wzw/test/springboottest/controller/PageB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-test/src/main/java/com/wzw/test/springboottest/controller/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-test/src/main/java/com/wzw/test/springboottest/controller/TestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-test/src/main/java/com/wzw/test/springboottest/ssid/Response.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-test/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-test/src/test/java/com/wzw/test/springboottest/SpringBootTestApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01-spring-annotation/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../01-spring-annotation/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01-spring-annotation/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../01-spring-annotation/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01-spring-annotation/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../01-spring-annotation/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-annotation/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-annotation/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-boot-knowledge-extension/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-boot-knowledge-extension/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-boot-knowledge-extension/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-boot-knowledge-extension/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-boot-vaildate/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-boot-vaildate/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-boot-vaildate/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-boot-vaildate/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-boot-vaildate/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-boot-vaildate/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="ADD_SUFFIX_TO_CHERRY_PICKS_OF_PUBLISHED_COMMITS" value="false" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="UPDATE_TYPE" value="MERGE" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="C:\DevTool\Maven\MavenRepository\repository" />
+        <option name="mavenHome" value="C:/DevTool/Maven/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="C:\DevTool\Maven\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1V3YxOTGiC6oRb7TS4giyWSersS" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="show.unlinked.gradle.project.popup" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="SpringBootCaseApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-boot-case.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="springbootcase.demo.SpringBootCaseApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9d932b05-13fe-4a45-8ca1-2b52e68a2a4f" name="Default Changelist" comment="" />
+      <created>1576483491794</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1576483491794</updated>
+      <workItem from="1576483493201" duration="638000" />
+      <workItem from="1576655680859" duration="1886000" />
+      <workItem from="1576814247648" duration="610000" />
+      <workItem from="1577177513792" duration="634000" />
+      <workItem from="1577179836620" duration="617000" />
+      <workItem from="1577256661035" duration="153000" />
+      <workItem from="1577260928168" duration="620000" />
+      <workItem from="1577263145119" duration="3158000" />
+      <workItem from="1577338638805" duration="1246000" />
+      <workItem from="1577343924423" duration="372000" />
+      <workItem from="1577344307590" duration="148000" />
+      <workItem from="1577345946651" duration="2503000" />
+      <workItem from="1577758276338" duration="1290000" />
+      <workItem from="1578023926070" duration="1406000" />
+      <workItem from="1579225004874" duration="2878000" />
+      <workItem from="1579228574649" duration="1882000" />
+      <workItem from="1588992793712" duration="767000" />
+      <workItem from="1591082986592" duration="2623000" />
+      <workItem from="1591157458846" duration="37000" />
+      <workItem from="1591158538079" duration="42000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="681" y="216" key="FileChooserDialogImpl" timestamp="1588992963791">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="681" y="216" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1588992963791" />
+    <state x="694" y="415" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1591158554973">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="694" y="415" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1591158554973" />
+  </component>
+</project>
