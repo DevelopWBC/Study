@@ -3,16 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="98a9b016-9c7b-4be0-a601-f186e2843e3a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-spring-annotation/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/01-spring-annotation/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-spring-annotation/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/01-spring-annotation/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-spring-annotation/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/01-spring-annotation/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-annotation/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-annotation/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-case/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-case/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-knowledge-extension/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-knowledge-extension/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-knowledge-extension/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-knowledge-extension/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-vaildate/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-vaildate/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-vaildate/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-vaildate/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-vaildate/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-vaildate/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,33 +73,53 @@
       <updated>1564112205589</updated>
       <workItem from="1564112206880" duration="160000" />
       <workItem from="1589341507105" duration="1012000" />
+      <workItem from="1591861113197" duration="309000" />
     </task>
+    <task id="LOCAL-00001" summary="0.0">
+      <created>1591861152124</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1591861152124</updated>
+    </task>
+    <task id="LOCAL-00002" summary="0.0">
+      <created>1591861304039</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1591861304039</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="0.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="0.0" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="443" y="45" key="CommitChangelistDialog2" timestamp="1591861150981">
+    <state x="443" y="45" key="CommitChangelistDialog2" timestamp="1591861303089">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="443" y="45" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1591861150981" />
+    <state x="443" y="45" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1591861303089" />
     <state x="681" y="216" key="FileChooserDialogImpl" timestamp="1589341919644">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="681" y="216" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1589341919644" />
-    <state x="452" y="186" key="Vcs.Push.Dialog.v2" timestamp="1591861157330">
+    <state x="452" y="186" key="Vcs.Push.Dialog.v2" timestamp="1591861307583">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="452" y="186" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1591861157330" />
+    <state x="452" y="186" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1591861307583" />
     <state x="694" y="415" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589341903781">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="694" y="415" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1589341903781" />
-    <state x="640" y="166" key="git4idea.branch.GitSmartOperationDialog" timestamp="1591861269296">
+    <state x="640" y="166" key="git4idea.branch.GitSmartOperationDialog" timestamp="1591861410972">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="640" y="166" key="git4idea.branch.GitSmartOperationDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1591861269296" />
+    <state x="640" y="166" key="git4idea.branch.GitSmartOperationDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1591861410972" />
   </component>
   <component name="masterDetails">
     <states>
