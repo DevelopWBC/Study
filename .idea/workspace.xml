@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="98a9b016-9c7b-4be0-a601-f186e2843e3a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="ADD_SUFFIX_TO_CHERRY_PICKS_OF_PUBLISHED_COMMITS" value="false" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="spring-boot" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="C:\Software\Maven\MavenRepository\repository" />
+        <option name="mavenHome" value="C:/Software/Maven/apache-maven-3.6.0" />
+        <option name="userSettingsFile" value="C:\Software\Maven\apache-maven-3.6.0\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1bpulKb6Y1ARStyZ1Y3ap7859VM" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="98a9b016-9c7b-4be0-a601-f186e2843e3a" name="Default Changelist" comment="" />
+      <created>1564112205589</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1564112205589</updated>
+      <workItem from="1564112206880" duration="160000" />
+      <workItem from="1589341507105" duration="1012000" />
+      <workItem from="1591861113197" duration="722000" />
+      <workItem from="1591861849565" duration="16000" />
+    </task>
+    <task id="LOCAL-00001" summary="0.0">
+      <created>1591861152124</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1591861152124</updated>
+    </task>
+    <task id="LOCAL-00002" summary="0.0">
+      <created>1591861304039</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1591861304039</updated>
+    </task>
+    <task id="LOCAL-00003" summary="0.0">
+      <created>1591861425796</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1591861425796</updated>
+    </task>
+    <task id="LOCAL-00004" summary="0.0">
+      <created>1591861531200</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1591861531200</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="0.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="0.0" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="443" y="45" key="CommitChangelistDialog2" timestamp="1591861529983">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="443" y="45" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1591861529983" />
+    <state x="184" y="82" key="DiffContextDialog" timestamp="1591861456391">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="184" y="82" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1591861456391" />
+    <state x="681" y="216" key="FileChooserDialogImpl" timestamp="1589341919644">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="681" y="216" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1589341919644" />
+    <state x="184" y="82" key="MergeDialog" timestamp="1591861567823">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="184" y="82" key="MergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1591861567823" />
+    <state x="594" y="165" key="MultipleFileMergeDialog" timestamp="1591861567836">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="594" y="165" key="MultipleFileMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1591861567836" />
+    <state x="312" y="0" key="SettingsEditor" timestamp="1591861864750">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="312" y="0" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1591861864750" />
+    <state x="452" y="186" key="Vcs.Push.Dialog.v2" timestamp="1591861534957">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="452" y="186" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1591861534957" />
+    <state x="694" y="415" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589341903781">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="694" y="415" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1589341903781" />
+    <state x="640" y="166" key="git4idea.branch.GitSmartOperationDialog" timestamp="1591861921419">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="640" y="166" key="git4idea.branch.GitSmartOperationDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1591861921419" />
+  </component>
+</project>
